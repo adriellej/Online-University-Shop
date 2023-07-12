@@ -1,0 +1,65 @@
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+
+      <ion-buttons slot="start">
+        <ion-back-button class="back" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      
+      <ion-icon routerLink="/cart" slot="end" name="cart-outline"></ion-icon>
+
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <br>
+  <h1 class="pv-name">I.D Lace</h1>
+    <p class="pv-subtitle">University Accessories</p>
+    
+  <ion-card>
+    <img src="assets/pr8.png">
+  </ion-card>
+  <p class="pv-price">&#8369; 50.00</p>
+  <p class="pv-label">Size:</p>
+  <div class="pv-container" >
+    <ion-button class="pv-border-button" >One Size</ion-button>
+    
+  </div>
+  <br>
+  <p class="pv-label">Quantity:</p>
+  <div class="pv-container2">
+      <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+      <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+      <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+    </div>
+    <br>
+    <ion-button class="pv-border-button add-to-cart" (click)="addToCart()">ADD TO CART<ion-icon name="cart-outline"></ion-icon></ion-button>
+    <br>
+  </ion-content>
+  <ion-footer>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-icon routerLink="/welcome" name="home-outline" class="footer-icon"></ion-icon><br>
+          <ion-label class="footer-label">Home</ion-label>
+        </ion-col>
+
+        <ion-col>
+          <ion-icon name="bag" class="footer-icon" routerLink="/allprod" ></ion-icon><br>
+          <ion-label class="footer-label">Shop</ion-label>
+        </ion-col>
+
+        <ion-col>
+          <ion-icon name="person-outline" class="footer-icon"></ion-icon><br>
+          <ion-label class="footer-label" routerLink="/profile">Me</ion-label>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </ion-footer>
+
+</div>

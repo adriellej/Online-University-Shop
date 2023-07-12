@@ -1,0 +1,212 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+ion-button {
+    --background: transparent; 
+    --background-activated: transparent; 
+}
+
+* {
+    font-family: Poppins;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 18px;
+}
+
+/*menu*/
+.sidemenu-container ion-content {
+    --background: #0B0C0C;
+}
+
+ion-list, ion-item {
+    --background: #0B0C0C;
+    --border:none;
+    --border-width: 0px;
+}
+ion-label{
+    --border-width: 0;
+}
+
+.sidemenu-container ion-header {
+    background-color: #0B0C0C;
+}
+
+.sidemenu-container ion-toolbar {
+    --background: #0B0C0C;
+}
+
+.sidemenu-container ion-icon[name="pricetag"] {
+    font-size: 30px;
+    margin: 10px;
+    color: #eee; 
+}
+
+.sidemenu-footer {
+    padding: 25px;
+    background-color: #0B0C0C;
+}
+
+.sidemenu-footer ion-icon {
+    font-size: 30px;
+    color: #eee;
+}
+
+.contacts {
+    float: left;
+}
+
+.signout {
+    float: right;
+}
+
+.sidemenu-footer {
+    clear: both;
+    content: "";
+}
+
+
+/*main header*/
+#main-content ion-header {
+    background-color: #0B0C0C;
+}
+
+#main-content ion-toolbar {
+    padding: 15px 5px 5px;
+    --background: #0B0C0C;
+}
+
+#main-content ion-icon[name="cart-outline"] {
+    font-size: 36px;
+    color: #eee;
+}
+
+
+/*footer*/
+ion-footer {
+    background-color: #0B0C0C;
+    text-align: center;
+    height: 57px;
+    line-height: 10px;
+}
+
+.footer-icon {
+    font-size: 24px;
+    color: #eee;
+}
+
+.footer-label {
+    color: #eee;
+    font-size: 10px;
+}
+.title {
+    font-size: x-large;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: -3%;
+}
+.product-name {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.price {
+    font-size: 12px;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    height: 85%;
+}
+
+/* for product view*/
+
+ .pv-border-button {
+    --background: transparent;
+    --border: 2px solid black;
+    --border-radius: 0;
+    --color: black;
+  }
+  .pv-border-button:active {
+    --background: red;
+    --color: white;
+  }
+  .pv-container {
+    justify-content: center;
+    width: 100;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .pv-container2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pv-quantity-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+  }
+  .pv-name {
+    font-size: 30px;
+    text-align: center;
+  }
+  .pv-subtitle {
+    margin-top: -3%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .pv-price {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+
+  }
+  .back {
+    color: white;
+  }
+  .pv-label{
+    text-align: center;
+    font-size: 15px;
+  }
+  .add-to-cart {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: #0B0C0C;
+    color: white;
+  }
+  .pv-clicked {
+    background-color: rgb(255, 85, 85); 
+    color: white; 
+  }

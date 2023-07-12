@@ -1,0 +1,40 @@
+
+.top-container ion-img{
+    position: relative;
+    width: 100%;
+  }
+  
+  .top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+  }
+  
+  .top-text h1 {
+    color: #3C3935;
+  }
+  
+  ion-card {
+    text-align: center;
+    width: 90%;
+    margin: 7% auto;
+  }
+  
+  ion-card-title {
+    font-size: 22px;
+    padding: 15px;
+  }
+  
+  ion-card-subtitle {
+    font-size: 15px;
+    padding: 7px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #2D2E2E;
+  }

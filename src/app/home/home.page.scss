@@ -1,0 +1,45 @@
+.bg {
+    object-fit: fill;
+}
+.landing-page-container {
+    overflow-y: hidden;
+}
+.login {
+
+    color:rgb(226, 35, 35);
+    font-weight: 400;
+    --background: white;
+    width: 30%;
+    font-size: small;
+}
+.login1 {
+    color:rgb(226, 35, 35);
+    font-weight: 400;
+    --background: white;
+    width: 30%;
+    font-size: small;
+}
+.login:active {
+    
+    font-weight: 700;
+   
+}
+.content {
+    position: absolute;
+    left:0;
+    top: 0;
+    align-items: center;
+    text-align: center;
+
+}
+.title {
+    font-size: 35px;
+    color: white;
+    margin-top: 50%;
+}
+.campus {
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 4%;
+}

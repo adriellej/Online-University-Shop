@@ -1,0 +1,124 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+
+      <ion-buttons slot="start">
+        <ion-back-button class="back" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding"> 
+
+    <h1>Reservation Form</h1>
+    
+    <div class="form-container">
+      <ion-label class="label">SR Code</ion-label>
+      <ion-input type="text" class="inputfield"></ion-input>
+
+      <ion-label class="label">First Name</ion-label>
+      <ion-input type="text" class="inputfield"></ion-input>
+
+      <ion-label class="label">Last Name</ion-label>
+      <ion-input type="text" class="inputfield"></ion-input>
+      
+      <ion-label class="label">Products</ion-label>
+
+      <div class="products">
+        <ion-label class="label-light">Item Description</ion-label>
+        <ion-input type="text" class="inputfield  ion-padding"
+          placeholder="P.E T-Shirt"></ion-input>
+
+        <ion-label class="label-light">Price</ion-label>
+        <ion-input type="text" class="inputfield ion-padding"
+        placeholder="270"></ion-input>
+
+        <ion-label class="label-light">Quantity</ion-label>
+        <ion-input type="text" class="inputfield  ion-padding"
+        placeholder="1"></ion-input>
+
+      </div>
+
+      <ion-label class="label">Pick-Up Schedule</ion-label>
+      <span class="date-fields">
+        <ion-item>
+          <ion-input></ion-input>
+          <ion-button class="icon-btn" (click)="openCalendar()">
+            <ion-icon color="medium" slot="icon-only" name="calendar-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-datetime-button datetime="date" id="fake-click"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true" [isOpen]="showCalendar" (didDismiss)="cancelCalendar()">
+            <ng-template>
+              <ion-datetime
+                id="date"
+                color="primary"
+                presentation="date"
+                [isDateEnabled]="isWeekday"
+                [showDefaultButtons]="true"
+                doneText="Confirm"
+                cancelText="Cancel"
+              ></ion-datetime>
+            </ng-template>
+          </ion-modal>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input></ion-input>
+          <ion-button class="icon-btn" (click)="openTime()">
+            <ion-icon color="medium" slot="icon-only" name="time-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-datetime-button datetime="time" id="fake-click"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true" [isOpen]="showTime" (didDismiss)="cancelTime()">
+            <ng-template>
+              <ion-datetime
+                id="time"
+                color="primary"
+                presentation="time"
+                [showDefaultButtons]="true"
+                doneText="Confirm"
+                cancelText="Cancel"
+              ></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </ion-item>
+      </span>
+
+      <ion-label class="label">Email Address</ion-label>
+      <ion-input type="text" class="inputfield"></ion-input>
+      <ion-text style="font-size: 14px;">Note: Please make sure your email is correct.</ion-text>
+    
+    </div>
+
+    <ion-button class="submit-btn" size="small"(click)="openPopup()">Submit</ion-button>
+  </ion-content>
+
+  <ion-footer>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-icon routerLink="/welcome" name="home-outline" class="footer-icon"></ion-icon><br>
+          <ion-label class="footer-label">Home</ion-label>
+        </ion-col>
+
+        <ion-col>
+          <ion-icon name="bag" class="footer-icon" routerLink="/allprod" ></ion-icon><br>
+          <ion-label class="footer-label">Shop</ion-label>
+        </ion-col>
+
+        <ion-col>
+          <ion-icon name="person-outline" class="footer-icon"></ion-icon><br>
+          <ion-label class="footer-label" routerLink="/profile">Me</ion-label>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </ion-footer>
+
+</div>

@@ -1,0 +1,92 @@
+
+<ion-buttons slot="start">
+  <ion-back-button class="back" defaultHref="/"></ion-back-button>
+</ion-buttons>
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="title">
+    <h1>ONLINE <br>UNIVERSITY SHOP</h1>
+    <h5>ALANGILAN CAMPUS</h5>
+
+    <ion-img src="assets/ahu.png" alt="Red Spartan logo"></ion-img>
+  </div>
+
+  <div class="form-container">
+
+    <div class="flex-container">
+
+      <div>
+        <ion-list>
+
+          <ion-item lines="none">
+            <ion-label class="label">SR Code</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">First Name</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">Last Name</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">Campus</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">Department</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">Year Level</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="label">Gsuite Account</ion-label>
+          </ion-item>
+
+        </ion-list>
+      </div>
+
+      <div>
+        <ion-list>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="text" class="inputbox"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-input type="email" class="inputbox"></ion-input>
+          </ion-item>
+
+        </ion-list>
+      </div>
+
+    </div>
+    
+    <ion-button size="small"  (click)="openPopup()">SIGN UP</ion-button>
+
+  </div>
+
+</ion-content>

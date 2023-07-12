@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-container {
+    line-height: 45px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.label {
+    color: #C4191E; 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputfield {
+    border: 1px solid grey;
+}
+
+.products {
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+.label-light {
+    color: #C4191E; 
+    font-size: 14px;
+    font-style: italic;
+}
+
+.date-fields {
+    display: flex;
+    justify-content: space-around;
+}
+
+ion-item {
+    --background: none;
+    border: 1px solid grey;
+    width: 47%;
+}
+
+.submit-btn {
+    --background: #5271ff;
+    --border: 1px solid #5271ff;
+    --border-radius: 50px;
+    float: right;
+}
+
+.icon-btn {
+    --background: none;
+    --border: none;
+}
+
+#fake-click {
+    display: none;
+  }
+

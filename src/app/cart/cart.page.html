@@ -1,0 +1,204 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+
+      <ion-buttons slot="start">
+        <ion-button (click)="backClicked()">
+          <ion-icon name="chevron-back-outline" class="back"></ion-icon> 
+       </ion-button>
+      </ion-buttons>  
+      <ion-title>Cart</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding"> 
+
+    <div>
+      <p class="removeall" (click)="RemoveFromCart();"><ion-icon name="trash-outline"></ion-icon> Remove all</p>
+    </div>
+
+    <div class="items-container">
+
+      <ion-list lines="none">
+
+        <ion-item-sliding>
+          <ion-item>
+
+            <ion-thumbnail slot="start">
+              <ion-img src="assets/pr5.png"></ion-img>
+            </ion-thumbnail>
+
+            <ion-label slot="start" style="margin-right: 0;">
+              <h3>P.E T-Shirt</h3>
+              <p>Unit Price : P 270</p>
+              <p>Total: P 270</p>
+            </ion-label>
+
+            <div slot="end" class="qty-container">
+
+              <ion-grid>
+                <ion-row>
+                  <div class="pv-container2">
+                    <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+                    <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+                    <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+                  </div>
+                </ion-row>
+              </ion-grid>
+            
+            </div>
+
+          </ion-item>
+
+          <ion-item-options>
+            <ion-item-option color="danger"> 
+              <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item>
+
+            <ion-thumbnail slot="start">
+              <ion-img src="assets/pr6.png"></ion-img>
+            </ion-thumbnail>
+
+            <ion-label slot="start" style="margin-right: 0;">
+              <h3>P.E Pants</h3>
+              <p>Unit Price : P 270</p>
+              <p>Total: P 270</p>
+            </ion-label>
+
+            <div slot="end" class="qty-container">
+
+              <ion-grid>
+                <ion-row>
+                  <div class="pv-container2">
+                    <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+                    <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+                    <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+                  </div>
+                </ion-row>
+              </ion-grid>
+            
+            </div>
+
+          </ion-item>
+
+          <ion-item-options>
+            <ion-item-option color="danger"> 
+              <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item>
+
+            <ion-thumbnail slot="start">
+              <ion-img src="assets/pr8.png"></ion-img>
+            </ion-thumbnail>
+
+            <ion-label slot="start" style="margin-right: 0;">
+              <h3>I.D Lace</h3>
+              <p>Unit Price : P 50</p>
+              <p>Total: P 50</p>
+            </ion-label>
+
+            <div slot="end" class="qty-container">
+
+              <ion-grid>
+                <ion-row>
+                  <div class="pv-container2">
+                    <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+                    <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+                    <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+                  </div>
+                </ion-row>
+              </ion-grid>
+            
+            </div>
+
+          </ion-item>
+
+          <ion-item-options>
+            <ion-item-option color="danger"> 
+              <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item>
+
+            <ion-thumbnail slot="start">
+              <ion-img src="assets/pr7.png"></ion-img>
+            </ion-thumbnail>
+
+            <ion-label slot="start" style="margin-right: 0;">
+              <h3>Collar Pin</h3>
+              <p>Unit Price : P 35</p>
+              <p>Total: P 35</p>
+            </ion-label>
+
+            <div slot="end" class="qty-container">
+
+              <ion-grid>
+                <ion-row>
+                  <div class="pv-container2">
+                    <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+                    <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+                    <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+                  </div>
+                </ion-row>
+              </ion-grid>
+            
+            </div>
+
+          </ion-item>
+
+          <ion-item-options>
+            <ion-item-option color="danger"> 
+              <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+
+        </ion-item-sliding>
+
+      </ion-list>
+
+    </div>
+
+    <div>
+      <ion-item class="total-bottom" lines="none">
+        <ion-label slot="start">Total</ion-label>
+        <ion-label slot="end">P 625</ion-label>
+      </ion-item>
+    </div>
+
+    <ion-button routerLink="/reservationform" class="proceed-btn" size="small">Proceed</ion-button>
+
+  </ion-content>
+
+  <ion-footer>
+
+    <ion-grid>
+      <ion-row>
+
+        <div class="pv-container2">
+          <ion-button class="pv-border-button" (click)="decreaseQuantity()">-</ion-button>
+          <ion-input type="number" [(ngModel)]="quantity" class="pv-quantity-input"></ion-input>
+          <ion-button class="pv-border-button" (click)="increaseQuantity()">+</ion-button>
+        </div>
+
+      </ion-row>
+    </ion-grid>
+
+  </ion-footer>
+
+</div>
